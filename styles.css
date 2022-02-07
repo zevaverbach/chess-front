@@ -1,0 +1,26 @@
+#board {
+  margin: auto;
+  padding-top: 4vw;
+  width: 50vw;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+}
+.box::before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #212121;
+}
+body .grid {
+  max-width: 570px;
+  margin: 30px auto;
+  box-sizing: border-box;
+  border: 10px solid #2a351f;
+}
